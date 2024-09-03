@@ -12,7 +12,7 @@
     z-index: 1000;
     }*/
     
-    
+/*HEADER CSS*/    
 .header {
     position: fixed;
     top: 0;
@@ -26,7 +26,34 @@
     justify-content:end ;
     z-index: 1000; /* Ensure header is above other content */
     font-family: "SUSE", sans-serif;
+    
+}
 
+.slogan {
+  font-size: 20px;
+  font-weight: 400;
+  padding-right: 70px;
+}
+.nav-list li {
+  margin: 5px;
+  
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding: 5px;
+  transition: color 0.5s;
+  border-radius: 10px;
+  font-family: "SUSE", sans-serif;
+  height: 20px;
+  background: none;
+}
+
+.nav-list a:hover {
+  background-color: #3E73F3;
+  color: white;
 }
 
 .navbar {
@@ -44,19 +71,18 @@
     padding: 0;
     
 }
+
+/*BODY CSS*/
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-.logo-img {
-    width: 50px;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    transition: transform 2s;
-}
+
+
+/*MAIN CSS*/
 
 main{
     margin-top: 90px;
@@ -87,6 +113,23 @@ main{
     color: rgb(255, 255, 255);
 }
 
+.logo-img {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: transform 2s;
+}
+.logo {
+  margin-top: 50px;
+  font-size: 70px;
+  padding-bottom: 10px;
+}
+
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
 .main_photo {
     height: 350px;
     object-fit: cover;
@@ -108,43 +151,8 @@ main{
 }
 
 
-.logo-img:hover {
-    transform: scale(1.1);
-}
 
 
-  
-.logo {
-    margin-top: 50px;
-    font-size: 70px;
-    padding-bottom: 10px;
-}
-
-.slogan {
-    font-size: 20px;
-    font-weight: 400;
-}
-.nav-list li {
-    margin: 5px;
-    
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    padding: 5px;
-    transition: color 0.5s;
-    border-radius: 10px;
-    font-family: "SUSE", sans-serif;
-    height: 20px;
-    background: none;
-}
-
-.nav-list a:hover {
-    background-color: #3E73F3;
-    color: white;
-}
 
 
 .latest_posts {
@@ -234,8 +242,7 @@ main{
 
 
 
-
-
+/*FOOTER CSS*/
 
 .footer {
     background-color: #333;
@@ -270,4 +277,87 @@ main{
 .icon_img {
     width: 30px;
     margin: 10px;
+}
+
+
+/*ABOUT US CSS*/
+
+.about_photo {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 40px;
+    margin-right: 100px;
+}
+
+.logo_ab{
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.slogan_ab {
+  font-size: 20px;
+  font-weight: 350;
+  padding-right: 90px;
+}
+
+.ab_body{
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: "SUSE", sans-serif;
+    background-color: #3E73F3;
+    text-align: end;
+}
+
+
+.ab_body h1 {
+    margin-right: 60px;
+    font-size: 40px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.about_body{
+    border-radius: 70px;
+    background-color: #ffffff;
+}
+
+.our_story{
+    background: linear-gradient(to top, #ffffff, #3E73F3);
+    padding: 20px;
+    text-align: end;
+    display: flex;
+    text-align: end;    
+    margin: 0 auto;
+    float: left;
+    left: 0px;
+    justify-content: first baseline;
+}
+
+.story{
+    display: flex;
+    gap: 10px;
+    border-radius: 70px;
+    background-color: #ffffff;
+    transition: transform 0.3s;
+    margin: 40px;
+}
+
+.story_img{
+    
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.story_text{
+    text-align: end;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 50px;
 }
