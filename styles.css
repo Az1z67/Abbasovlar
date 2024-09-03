@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+/*.header {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    color: black;
+    font-family: "SUSE", sans-serif;
+    z-index: 1000;
+    }*/
+    
+    
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(100%); /* Blur effect */
+    display: flex;
+    align-items: center;
+    justify-content:end ;
+    z-index: 1000; /* Ensure header is above other content */
+    font-family: "SUSE", sans-serif;
+
+}
+
+.navbar {
+    height: 70px;
+    padding: 10px;
+    
+    
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    background: inherit; /* Semi-transparent background */
+    backdrop-filter: blur(100%); /* Blur effect */
+    list-style: none;
+    padding: 0;
+    
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo-img {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: transform 2s;
+}
+
+main{
+    margin-top: 90px;
+    font-family: "SUSE", sans-serif;
+    text-align: center;
+}    
+
+.main {
+    background-color: #f0f0f0;
+    
+    font-family: "SUSE", sans-serif;
+    /*background: radial-gradient(ellipse at top left, #89f7fe, #66a6ff);*/
+    background: linear-gradient(to bottom, #ffffff, #3E73F3);
+    display: flex;
+}
+
+.main_body{
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: "SUSE", sans-serif;
+    background-color: #3E73F3;
+    text-align: center;
+}
+
+.main_body h1 {
+    font-size: 40px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+.main_photo {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 40px;
+    margin-right: 40px;
+}
+
+.main_body_text {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 auto;
+    float: left;
+    left: 0px;
+    justify-content: first baseline;
+    margin-left: 50px;
+    text-align: start;
+}
+
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+
+  
+.logo {
+    margin-top: 50px;
+    font-size: 70px;
+    padding-bottom: 10px;
+}
+
+.slogan {
+    font-size: 20px;
+    font-weight: 400;
+}
+.nav-list li {
+    margin: 5px;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    transition: color 0.5s;
+    border-radius: 10px;
+    font-family: "SUSE", sans-serif;
+    height: 20px;
+    background: none;
+}
+
+.nav-list a:hover {
+    background-color: #3E73F3;
+    color: white;
+}
+
+
+.latest_posts {
+    background: linear-gradient(to top, #ffffff, #3E73F3);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.post{
+    border-radius: 70px;
+    text-align: center;
+    margin: 30px;
+    background-color: #ffffff;
+    transition: transform 0.3s;
+}
+
+.post:hover{
+    transform: scale(1.1);
+}
+
+.post h1{
+    font-size: 20px;
+    font-weight: 300;
+    color: #3E73F3;
+}
+
+.post p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #000000;
+    margin: 40px;
+}
+
+.post_img{
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.post_btn{
+    background-color: #3E73F3;
+    color: white;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 30px;
+    margin-top: 10PX;
+    text-decoration: none;
+    border: none;
+    transition: color 0.5s;
+}
+
+.post_btn:hover{
+    background-color: #bacef8;
+    color: #3E73F3;
+}
+
+.sign_but{
+    background-color: #3E73F3;
+    color: white;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 30px;
+    margin-top: 10PX;
+    text-decoration: none;
+    border: none;
+    transition: color 0.5s;
+    width: 200px;
+}
+
+.sign_but:hover{
+    background-color: #bacef8;
+    color: #3E73F3;
+}
+
+.text{
+    text-align: center;
+    font-size: 40px;
+    font-size: 36px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "SUSE", sans-serif;
+    margin-top: 60px;
+    padding-top: 30px;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    text-decoration: none;
+}
+.footer .social-icons {
+
+    margin: 10px 0;
+}
+.footer .social-icons a {
+    margin: 10px;
+    color: white;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.icon_img {
+    width: 30px;
+    margin: 10px;
+}
