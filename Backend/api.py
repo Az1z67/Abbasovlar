@@ -1,12 +1,12 @@
 import sqlite3 
 import json
-from flask import Flask, request, jsonify #type: ignore
+from flask import Flask, request, jsonify, render_template #type: ignore
 
 
 app  = Flask(__name__)
 
-@app.get("/hello")
-def hello_world():
-  return 'Hello World!'
+@app.get("/")
+def index():
+  return render_template('templates/index.html')
 
-app.run(host='localhost', port=5040)
+app.run(host='0.0.0.0', port=5040)
